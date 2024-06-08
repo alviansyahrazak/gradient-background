@@ -1,0 +1,191 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#gradient {
+    background: linear-gradient(to right, #00ff00, #ff0000); /* Default gradient */
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+h3#gradientInfo {
+    font-size: 1.2em;
+    margin: 1em 0;
+    color: #555;
+}
+
+input#firstColor,
+input#secondColor {
+    margin: 0.5em;
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+input#firstColor:hover,
+input#secondColor:hover {
+    transform: scale(1.1);
+}
+
+button#randomGradientBtn {
+    padding: 0.7em 1.5em;
+    margin-top: 1em;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button#randomGradientBtn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    h3#gradientInfo {
+        font-size: 1.1em;
+    }
+
+    input#firstColor,
+    input#secondColor {
+        width: 80px;
+        height: 40px;
+    }
+
+    button#randomGradientBtn {
+        padding: 0.6em 1.3em;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h3#gradientInfo {
+        font-size: 1em;
+    }
+
+    input#firstColor,
+    input#secondColor {
+        width: 70px;
+        height: 35px;
+    }
+
+    button#randomGradientBtn {
+        padding: 0.5em 1.2em;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.1em;
+    }
+
+    h3#gradientInfo {
+        font-size: 0.9em;
+    }
+
+    input#firstColor,
+    input#secondColor {
+        width: 60px;
+        height: 30px;
+    }
+
+    button#randomGradientBtn {
+        padding: 0.4em 1em;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    h3#gradientInfo {
+        font-size: 0.8em;
+    }
+
+    input#firstColor,
+    input#secondColor {
+        width: 50px;
+        height: 25px;
+    }
+
+    button#randomGradientBtn {
+        padding: 0.3em 0.9em;
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 0.9em;
+    }
+
+    h3#gradientInfo {
+        font-size: 0.7em;
+    }
+
+    input#firstColor,
+    input#secondColor {
+        width: 40px;
+        height: 20px;
+    }
+
+    button#randomGradientBtn {
+        padding: 0.2em 0.8em;
+        font-size: 0.6em;
+    }
+}
